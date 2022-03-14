@@ -1,15 +1,14 @@
-import React, { Component } from "react";
-import Main from "./components/Main";
-import "semantic-ui-css/semantic.min.css";
+import React from 'react'
+import Recommender from './components/Recommender'
+const App = () => {
 
-class App extends Component {
-  render() {
-    return (
-      <div className="rec-app">
-        <Main />
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <h2>Book Recommender</h2>
+      <p>Which book should you read?</p>
+      <Recommender />
+    </div>
+  )
 }
 
 export default App;
